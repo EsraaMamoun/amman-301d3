@@ -1,0 +1,24 @@
+body {
+  background-color: darkgray;
+  font-size: 30px;
+}
+
+div {
+  background-color: royalblue;
+  color: #eee;
+  height: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 300px;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-color: aqua;
+  }
+  div {
+    width: 45%;
+    display: inline-block;
+    background-color: coral;
+  }
+}
