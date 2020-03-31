@@ -1,0 +1,11 @@
+#dog-template {
+  display: none;
+}
+
+img {
+  height: 200px;
+}
+div {
+  float: left;
+  margin: 40px;
+}

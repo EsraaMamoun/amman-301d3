@@ -1,0 +1,26 @@
+/* start with mobile first */
+
+div, header, footer{
+  height: 200px;
+  border: 1px solid #383838;
+  background-color: lightcoral;
+  color: #fee4e4;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 200px;
+}
+div{
+  width: 100%;
+}
+body{
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media( max-width: 960px ) {
+  body{
+    width: 100%;
+  }
+}
