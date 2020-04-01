@@ -1,0 +1,16 @@
+body{
+    background: #eee;
+}
+nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+header{
+    background: #94ffff94;
+}
+#grid-elm div {
+    background: #074242;
+    color: #fff;
+    height: 100px;
+    box-shadow: 1px 5px 8px #798282;
+  }

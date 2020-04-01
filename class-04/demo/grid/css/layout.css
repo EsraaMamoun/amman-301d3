@@ -1,0 +1,36 @@
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#grid-elm {
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px 40px;
+}
+#grid-elm div {
+  height: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media(max-width: 766px){
+  nav{
+      display: none;
+  }
+  .nav-content {
+      justify-content: center;
+  }
+  div.nav-content {
+      justify-content: center;
+  }
+}
