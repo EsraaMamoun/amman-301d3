@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS people;
+CREATE TABLE people (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255),
+  role VARCHAR(255)
+);
