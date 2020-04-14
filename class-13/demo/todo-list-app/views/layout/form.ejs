@@ -1,0 +1,37 @@
+<% let action = formAction === "UPDATE" ? `/update/${task.id}?_method=PUT`:
+'/add'; let text = formAction === "UPDATE" ? "Update": "Add" %>
+<form action="<%=action%>" method="POST">
+  <fieldset>
+    <legend><%=text%> a task</legend>
+    <input
+      type="text"
+      name="title"
+      placeholder="Task"
+      value="<%=task.title%>"
+    />
+    <textarea
+      name="description"
+      placeholder="Description of the task"
+      cols="30"
+      row="10"
+    >
+<%=task.description%>
+</textarea
+    >
+    <input
+      type="text"
+      name="category"
+      placeholder="Category"
+      value="<%=task.category%>"
+    />
+    <input
+      type="text"
+      name="contact"
+      placeholder="Contact Person"
+      value="<%=task.contact%>"
+    />
+    <input type=<%- text === 'Update' ? 'text':'hidden'%> name="status"
+    value="<%=task.status%>" placeholder="status" />
+    <button type="submit"><%=text%> this Task</button>
+  </fieldset>
+</form>
